@@ -79,6 +79,8 @@ function addHeaderInputs() {
       <option value="randomDateYYY/MM/DD">Random Date: YYY/MM/DD</option>
       <option value="randomYearYYYY">Random Date: YYYY</option>
       <option value="randomBoolean">Random Boolean</option>
+      <option value="randomMixedStringAndNumber">Random String And Number</option>
+      <option value="randomMixedKanaAndNumber">Random Kana And Number</option>
     `;
 
 
