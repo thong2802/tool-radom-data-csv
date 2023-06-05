@@ -119,6 +119,12 @@ function getRandomData(condition, maxLength) {
     case 'randomYearYYYY':
       randomData = getRandomYear();
       break;
+    case 'randomMixedStringAndNumber':
+      randomData = getRandomKanaAndNumber();
+      break;
+    case 'randomMixedKanaAndNumber':
+      randomData = getRandomKanaAndNumber();
+      break;
     default:
       randomData = '';
   }
@@ -140,6 +146,12 @@ function getRandomEnglishWord(maxLength) {
 
 function getRandomNumber(maxLength) {
   var randomNumber = Math.floor(Math.random() * Math.pow(10, maxLength));
+  return randomNumber.toString();
+}
+
+function getRandomNumber(maxLength) {
+  var maxNumber = BigInt(Math.pow(10, maxLength) - 1);
+  var randomNumber = BigInt(Math.floor(Math.random() * Number(maxNumber)));
   return randomNumber.toString();
 }
 
@@ -172,110 +184,6 @@ function getRandomYear() {
   return randomYear.toString();
 }
 
-var dictionary = [
-  "abandon",
-  "ability",
-  "absence",
-  "absolute",
-  "absorb",
-  "abstract",
-  "absurd",
-  "abuse",
-  "academic",
-  "accent",
-  "accept",
-  "access",
-  "accident",
-  "account",
-  "accuse",
-  "achieve",
-  "acid",
-  "acoustic",
-  "acquire",
-  "across",
-  "act",
-  "action",
-  "active",
-  "actor",
-  "actress",
-  "actual",
-  "adapt",
-  "add",
-  "address",
-  "admire",
-  "admit",
-  "adopt",
-  "adult",
-  "advance",
-  "adventure",
-  "advice",
-  "affect",
-  "afford",
-  "afraid",
-  "afternoon",
-  "age",
-  "agency",
-  "agenda",
-  "agent",
-  "ago",
-  "agree",
-  "ahead",
-  "aim",
-  "air",
-  "airport",
-  "aisle",
-  "alarm",
-  "album",
-  "alcohol",
-  "alert",
-  "alien",
-  "align",
-  "alive",
-  "all",
-  "alley",
-  "allocate",
-  "allow",
-  "ally",
-  "almost",
-  "alone",
-  "along",
-  "alphabet",
-  "already",
-  "also",
-  "alter",
-  "always",
-  "amateur",
-  "amazing",
-  "ambassador",
-  "ambition",
-  "ambulance",
-  "amend",
-  "among",
-  "amount",
-  "amplify",
-  "amused",
-  "analyst",
-  "anchor",
-  "ancient",
-  "anger",
-  "angle",
-  "angry",
-  "animal",
-  "ankle",
-  "announce",
-  "annual",
-  "another",
-  "answer",
-  "antenna",
-  "antique",
-  "anxiety",
-  "any",
-  "apart",
-  "apartment",
-  "apologize"
-];
-
-console.log(words);
 
 
 
