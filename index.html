@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Create Random CSV Data</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Create Random CSV Data</h1>
+    <div class="input-group">
+      <label for="headerCount">Header Count:</label>
+      <input type="number" id="headerCount" min="1" value="5">
+    </div>
+    <div id="headerInputs"></div>
+    <div class="input-group">
+      <label for="rowCount">Row Count:</label>
+      <input type="number" id="rowCount" min="1" value="10">
+    </div>
+    <div class="button-group">
+      <button id="generateBtn" onclick="generateCSV()">Generate CSV</button>
+    </div>
+    <a id="downloadLink" download="data.csv" style="display: none;"></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Random CSV Data</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4 mb-4">Create Random CSV Data</h1>
+    <div class="form-group">
+      <label for="headerCount">Header Count:</label>
+      <input type="number" class="form-control" id="headerCount" min="1" value="5">
+    </div>
+    <div id="headerInputs"></div>
+    <div class="form-group">
+      <label for="rowCount">Row Count:</label>
+      <input type="number" class="form-control" id="rowCount" min="1" value="10">
+    </div>
+    <div class="text-center">
+      <button id="generateBtn" class="btn btn-primary" onclick="generateCSV()">Generate CSV</button>
+    </div>
+    <a id="downloadLink" download="data.csv" style="display: none;"></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
